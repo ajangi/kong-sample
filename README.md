@@ -1,2 +1,5 @@
 # kong-sample
-A kong sample config using docker
+Simply run this magical command :
+```bash
+$ docker-compose up -d
+```

@@ -46,10 +46,6 @@ services:
     user: "${KONG_USER:-kong}"
     depends_on:
       - kong_db
-    #volumes:
-    #  - ./default.conf:/etc/kong/kong.conf.default
-    #  - ./nginx/nginx.conf://usr/local/kong/nginx.conf
-    #  - ./nginx/custom.conf://usr/local/kong/custom.conf
     environment:
       KONG_ADMIN_ACCESS_LOG: /dev/stdout
       KONG_ADMIN_ERROR_LOG: /dev/stderr
